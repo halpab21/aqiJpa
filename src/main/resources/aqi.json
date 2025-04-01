@@ -1,122 +1,122 @@
 [
   {
     "year": 2000,
-    "value": 255.7313037,
+    "value": 255.731,
     "aqiString": "Very unhealthy"
   },
   {
     "year": 2001,
-    "value": 245.5408328,
+    "value": 245.540,
     "aqiString": "Very unhealthy"
   },
   {
     "year": 2002,
-    "value": 234.0462358,
+    "value": 234.046,
     "aqiString": "Very unhealthy"
   },
   {
     "year": 2003,
-    "value": 234.5601173,
+    "value": 234.560,
     "aqiString": "Very unhealthy"
   },
   {
     "year": 2004,
-    "value": 228.2401085,
+    "value": 228.240,
     "aqiString": "Very unhealthy"
   },
   {
     "year": 2005,
-    "value": 219.5836361,
+    "value": 219.583,
     "aqiString": "Very unhealthy"
   },
   {
     "year": 2006,
-    "value": 219.5639483,
+    "value": 219.563,
     "aqiString": "Very unhealthy"
   },
   {
     "year": 2007,
-    "value": 211.5170765,
+    "value": 211.517,
     "aqiString": "Very unhealthy"
   },
   {
     "year": 2008,
-    "value": 204.848754,
+    "value": 204.848,
     "aqiString": "Very unhealthy"
   },
   {
     "year": 2009,
-    "value": 197.7180641,
+    "value": 197.718,
     "aqiString": "Unhealthy"
   },
   {
     "year": 2010,
-    "value": 203.3169861,
+    "value": 203.316,
     "aqiString": "Very unhealthy"
   },
   {
     "year": 2011,
-    "value": 197.3701344,
+    "value": 197.370,
     "aqiString": "Unhealthy"
   },
   {
     "year": 2012,
-    "value": 197.2043982,
+    "value": 197.204,
     "aqiString": "Unhealthy"
   },
   {
     "year": 2013,
-    "value": 198.5497962,
+    "value": 198.549,
     "aqiString": "Unhealthy"
   },
   {
     "year": 2014,
-    "value": 186.1986213,
+    "value": 186.198,
     "aqiString": "Unhealthy"
   },
   {
     "year": 2015,
-    "value": 189.9959261,
+    "value": 189.995,
     "aqiString": "Unhealthy"
   },
   {
     "year": 2016,
-    "value": 188.0986302,
+    "value": 188.098,
     "aqiString": "Unhealthy"
   },
   {
     "year": 2017,
-    "value": 184.694539,
+    "value": 184.694,
     "aqiString": "Unhealthy"
   },
   {
     "year": 2018,
-    "value": 170.0530555,
+    "value": 170.053,
     "aqiString": "Unhealthy"
   },
   {
     "year": 2019,
-    "value": 174.5288015,
+    "value": 174.528,
     "aqiString": "Unhealthy"
   },
   {
     "year": 2020,
-    "value": 166.1837617,
+    "value": 166.183,
     "aqiString": "Unhealthy"
   },
   {
     "year": 2021,
-    "value": 188.568258,
+    "value": 188.568,
     "aqiString": "Unhealthy"
   },
   {
     "year": 2022,
-    "value": 169.6375179,
+    "value": 169.637,
     "aqiString": "Unhealthy"
   },
   {
     "year": 2023,
-    "value": 163.7453256,
+    "value": 163.745,
     "aqiString": "Unhealthy"
   }
 ]

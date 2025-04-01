@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqi Bar Chart</title>
+    <script src="aqi.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</head>
+<body>
+
+<canvas id="myBarChart"></canvas>
+
+<script>
+    const ctx = document.getElementById('myBarChart').getContext('2d');
+
+    const getColor = (aqi) => {
+        if (aqi >= 0 && aqi <= 50) return "green";
+        if (aqi > 50 && aqi <= 100) return "yellow";
+        if (aqi > 100 && aqi <= 150) return "orange";
+        if (aqi > 150 && aqi <= 200) return "red";
+        if (aqi > 200 && aqi <= 300) return "purple";
+        if (aqi > 300 && aqi <= 500) return "maroon";
+        return "gray";
+    };
+
+    const createChart = async () => {
+        const labels = await getAqiLabels(); // Fetch X-axis labels
+        const aqiData = await getAqi(); // Fetch AQI values
+        const customDataLabels = await getAqiDataLabels(); // Fetch custom text labels
+
+        const backgroundColors = aqiData.map(aqi => getColor(aqi));
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label:'AQI',
+                    data: aqiData,
+                    backgroundColor: backgroundColors,
+                }]
+            },
+            options: {
+                plugins: {
+                    datalabels: {
+                        color: "white",
+                        anchor: "center",
+                        align: "center",
+                        font: {
+                            size: 14
+                        },
+                        rotation: 270,
+                        formatter: (value, context) => customDataLabels[context.dataIndex] // ✅ Use custom labels
+                    }
+                },
+                scales: {
+                    x: {
+                        title: {
+                            display: true,  // Display the title for the X-axis
+                            text: 'year'  // Set X-axis label here
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,  // Display the title for the Y-axis
+                            text: 'AQI Value'  // Set Y-axis label here
+                        },
+                        beginAtZero: true  // Ensures the Y-axis starts from 0
+                    }
+                }
+            },
+            plugins: [ChartDataLabels]
+        });
+    };
+
+    createChart();  // Call function to generate the chart
+</script>
+
+</body>
+</html>
